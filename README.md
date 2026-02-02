@@ -9,12 +9,12 @@
 - **CV Matching**: Scores job offers (0-100%) based on your CV and experience
 - **Database Integration**: Stores offers in DuckDB with status tracking
 - **Folder Generation**: Auto-creates structured folders for high-scoring offers (>70%)
-- **Rate Limiting**: Built-in delays to avoid Cloudflare bans
+- **Rate Limiting**: Built-in 10s delays between requests to avoid Cloudflare bans
 
 ## 📋 Requirements
 
 - Python 3.10+
-- VPN recommended (Pracuj.pl rate limits aggressively)
+- Stable internet connection
 
 ## 🛠️ Installation
 
@@ -73,8 +73,8 @@ CV Moje/
 
 ## ⚠️ Important Notes
 
-- **VPN Required**: Pracuj.pl uses Cloudflare rate limiting (Error 1015)
-- **Rate Limiting**: 10s delay between requests to avoid bans
+- **Rate Limiting**: 10s delay between requests prevents Cloudflare bans
+- **If Blocked (Error 1015)**: Change your IP (VPN, restart router, or wait 24h)
 - **Scraper Dependency**: Uses [TymekMor/Pracuj-pl-Scraper](https://github.com/TymekMor/Pracuj-pl-Scraper)
 
 ## 📝 License
