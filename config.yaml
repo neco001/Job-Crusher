@@ -1,0 +1,66 @@
+# Job Crusher - Configuration File
+
+# Wyszukiwania w Pracuj.pl
+search_queries:
+  - {keyword: "Category Management", description: "Category Management"}
+  - {keyword: "Category Manager", description: "Category Manager"}
+  - {keyword: "Dyrektor Zakupów", description: "Dyrektor Zakupów"}
+  - {keyword: "Procurement Director", description: "Procurement Director"}
+  - {keyword: "Commercial Strategy", description: "Commercial Strategy"}
+  - {keyword: "Revenue Growth Management", description: "SRGM"}
+  - {keyword: "Commercial Excellence", description: "Commercial Excellence"}
+
+# Filtry listy (Pre-filtering)
+filters:
+  allowed_locations: 
+    - "warszawa"
+    - "warsaw"
+    - "mazowieckie"
+    - "remote"
+    - "zdalna"
+    - "hybrid"
+    - "hybrydowa"
+    - "mazowsze"
+    - "online"
+  required_title_keywords:
+    - "director"
+    - "dyrektor"
+    - "head"
+    - "lead"
+    - "manager"
+    - "partner"
+    - "vp"
+    - "kierownik"
+  excluded_title_keywords:
+    - "junior"
+    - "młodszy"
+    - "asystent"
+    - "assistant"
+    - "specialist"
+    - "specjalista"
+    - "praktykant"
+    - "stażysta"
+    - "intern"
+    - "analityk"
+  min_salary_pln: 12000
+
+# Parametry Scoringu (Dopasowanie do CV)
+scoring_weights:
+  category_procurement:
+    weight: 30
+    keywords: ["category", "kategor", "procurement", "zakup", "sourcing", "purchasing", "kupiec"]
+  strategy_commercial:
+    weight: 25
+    keywords: ["strategy", "strategia", "srgm", "revenue growth", "excellence", "profitability", "pricing"]
+  fmcg_retail:
+    weight: 20
+    keywords: ["fmcg", "retail", "sieci handlowe", "spożywcze", "beauty", "cosmetics", "marketplace", "e-commerce"]
+  leadership_analytics:
+    weight: 25
+    keywords: ["analysis", "excel", "power bi", "leadership", "management", "zarządzanie", "team"]
+
+# Ustawienia techniczne
+settings:
+  deep_analysis_pauza_sec: 10
+  max_pages_per_query: 3
+  min_score_to_save_folder: 70

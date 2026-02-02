@@ -50,17 +50,7 @@ python job_hunter_v3.py
 
 ## 🔧 Configuration
 
-Edit search queries in `job_hunter_v3.py`:
-
-```python
-SEARCH_QUERIES = [
-    {
-        'keyword': 'dyrektor sprzedaży FMCG',
-        'description': 'Dyrektor sprzedaży w FMCG'
-    },
-    # Add your queries here
-]
-```
+The system is now config-driven. Edit `config.yaml` to define your search queries, filtering rules, and scoring weights.
 
 ## 📁 Output Structure
 
