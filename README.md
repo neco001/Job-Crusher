@@ -2,6 +2,8 @@
 
 **Automated job search, filtering, and application tracking system for Pracuj.pl**
 
+📖 **[Instrukcja po polsku](INSTRUKCJA.md)** | 🇵🇱 Polish Manual
+
 ## 🚀 Features
 
 - **Automated Scraping**: Scrapes job offers from Pracuj.pl with smart rate limiting
